@@ -1,4 +1,4 @@
-package com.shoppinglist.shopinglist;
+package com.shoppinglist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
