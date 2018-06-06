@@ -30,8 +30,8 @@ public class ItemController {
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/items/{itemId}")
-    public void deleteItem(@PathVariable Long taskId) {
-        dbService.deleteById(taskId);
+    public void deleteItem(@PathVariable Long itemId) {
+        dbService.deleteById(itemId);
     }
 
 }
