@@ -20,7 +20,7 @@ public class DbService {
         return itemRepository.findAll();
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(final Long id) {
         itemRepository.deleteById(id);
     }
 }
