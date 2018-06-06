@@ -5,7 +5,6 @@ import com.shoppinglist.domain.ItemDto;
 import com.shoppinglist.mapper.ItemMapper;
 import com.shoppinglist.service.DbService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,7 +16,6 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 @CrossOrigin(origins = "*")
 @AllArgsConstructor
 public class ItemController {
-    @Autowired
     private DbService dbService;
     private ItemMapper itemMapper;
 
