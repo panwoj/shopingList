@@ -29,4 +29,9 @@ public class ItemController {
         return dbService.saveItem(itemMapper.mapToItem(itemDto));
     }
 
+    @RequestMapping(method = RequestMethod.DELETE, value = "/items/{itemId}")
+    public void deleteItem(@PathVariable Long taskId) {
+        dbService.deleteById(taskId);
+    }
+
 }

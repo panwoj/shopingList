@@ -19,4 +19,8 @@ public class DbService {
     public List<Item> getAllItems() {
         return itemRepository.findAll();
     }
+
+    public void deleteById(Long id) {
+        itemRepository.deleteById(id);
+    }
 }

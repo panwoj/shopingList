@@ -11,4 +11,7 @@ public interface ItemRepository extends CrudRepository<Item, Long> {
 
     @Override
     List<Item> findAll();
+
+    @Override
+    void deleteById(Long id);
 }
